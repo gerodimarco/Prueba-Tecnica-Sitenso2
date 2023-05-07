@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Navbar from "./components/NavBar/Navbar";
+import './App.css';
 
 const Home = () => {
   const [characters, setCharacters] = useState([]);
@@ -29,37 +30,20 @@ const Home = () => {
 
 
   return (
-    <div>
-      <Navbar>
-
-      </Navbar>
-      <h1>Personajes</h1>
-      {/* <div className="card-container">
-        {characters && characters.map((character) => (
-          <div className="card" key={character.id}>
-            <h2>{character.name}</h2>
-            <img
-              src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
-              alt={character.name}
-            />
-          </div>
-        ))}
-      </div> */}
-
-      <h1>Comics</h1>
-      {/* <div className="card-container">
-        {comics && comics.map((comic) => (
-          <div className="card" key={comic.id}>
-            <h2>{comic.title}</h2>
-            <img
-              src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
-              alt={comic.title}
-            />
-          </div>
-        ))}
-      </div> */}
+    <div className="App">
+    <Navbar />
+    <div className="container col-md-8">
+      <div className="card">
+      <h2>COMICS</h2>
+        <img src="https://www.tebeosfera.com/T3content/img/T3_numeros/a/n/mmspidermanv1_038_09_pan.jpg" alt="/"/>
+      </div>
+      <div className="card">
+        <h2>CHARACTERS</h2>
+        <img src="https://tajmahalcomics.com/wp-content/uploads/2023/04/2188776_xl.jpg" alt="/" />
+      </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default Home;
