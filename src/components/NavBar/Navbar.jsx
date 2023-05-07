@@ -4,7 +4,7 @@ import './Navbar.css'
 const Navbar = () => {
     return (
         <div className='navbar'>
-            <h1>MARVEL HEROES de l mundo </h1>
+            <h1>MARVEL</h1>
 
         </div>
     )
