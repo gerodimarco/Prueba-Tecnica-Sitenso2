@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { BrowserRouter, Link } from 'react-router-dom';
 import Navbar from "./components/NavBar/Navbar";
 import './App.css';
+import Comics from "./components/Comics/Comics";
 
 const Home = () => {
   const [characters, setCharacters] = useState([]);
@@ -33,7 +35,12 @@ const Home = () => {
     <div className="App">
     <Navbar />
     <div className="container col-md-8">
-      <div className="card">
+    <BrowserRouter>
+      <Switch>
+        <Route path="./components/Comics/Comics.jsx" component="Comics.jsx" />
+      </Switch>
+    </BrowserRouter>
+      <div className="card" onClick={() => history.push('/Comics.jsx')} >
       <h2>COMICS</h2>
         <img src="https://www.tebeosfera.com/T3content/img/T3_numeros/a/n/mmspidermanv1_038_09_pan.jpg" alt="/"/>
       </div>
