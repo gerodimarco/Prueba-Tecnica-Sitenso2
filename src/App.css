@@ -8,7 +8,7 @@
 
 .card {
   width: 100%;
-  background-color: black;
+  background-color: rgb(18, 18, 18);
   box-shadow: 0 2px 4px rgba(0, 0,0,0.2);
   border-radius: 4px;
   margin-bottom: 20px;
@@ -24,7 +24,8 @@
 .card h2 {
   font-size: 2rem;
   color: red;
-  background-color: black;
+  background-color: rgb(18, 17, 17);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 768px) {
